@@ -1,0 +1,148 @@
+<!-- Author: Philip Robinson -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+     <head>
+
+          <!-- Added a title and favicon because it makes it look way better -->
+          <title> Cheesecake Order Form </title>
+          <link rel="shortcut icon" href="https://i.imgur.com/fB2rgzx.png">
+          <link rel="stylesheet" href="/stylesheets/style.css" />
+          <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display&
+                      display=swap" rel="stylesheet" />
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"/></script>
+          <script type="text/javascript" src="/javascripts/form_handler.js"></script>
+          <script type="text/javascript" src="/javascripts/dropdown_handler.js"></script>
+          <script type="text/javascript" src="/javascripts/testamonial_arrow_handler.js"></script>
+     </head>
+
+     <body class="cursor">
+          <div id="gradient-layer"></div>
+          <div id="content-wrapper">
+
+<!-- Header -->
+
+               <div id="header">
+                    <h1>Cheesecake Order Form</h1>
+               </div>
+
+<!-- Main content -->
+
+                    <div id="form-content">
+                    <img id="img" src="https://tinyurl.com/sradasq" alt="Cheesecake" width="150px"
+                         height="150px" class="cherry"/>
+
+<!-- Form -->
+
+                    <form id="order">
+                         <table id="form-part-1">
+                              <tr>
+                                   <td>
+                                        <span class="special-heading">Quantity</span>
+                                   </td>
+                                   <td>
+                                        <span class="special-heading">Topping</span>
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td>
+                                        <select id="quantity" name="quantity" class="plain">
+                                             <option value="1"> 1 </option>
+                                             <option value="2"> 2 </option>
+                                             <option value="3" selected="selected"> 3 </option>
+                                             <option value="4"> 4 </option>
+                                             <option value="5"> 5 </option>
+                                             <option value="6"> 6 </option>
+                                             <option value="7"> 7 </option>
+                                             <option value="8"> 8 </option>
+                                             <option value="9"> 9 </option>
+                                        </select>
+                                   </td>
+                                   <td>
+                                        <div id="radio-buttons">
+                                             <label class="plain">
+                                                  <input type="radio" name="type" value="plain"
+                                                       class="plain" checked="checked">
+                                                       Plain&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                       &nbsp;&nbsp;&nbsp;
+                                                  </input>
+                                             </label><br />
+                                             <label class="cherry">
+                                                  <input type="radio" name="type" value="cherry"
+                                                       class="cherry">
+                                                       Cherry&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                                  </input>
+                                             </label><br />
+                                             <label class="chocolate">
+                                                  <input type="radio" name="type" value="chocolate"
+                                                       class="chocolate">
+                                                       Chocolate
+                                                  </input>
+                                             </label><br />
+                                        </div>
+                                   </td>
+                              </tr>
+                         </table>
+                         <div id="form-part-2">
+                              <span class="special-heading">Notes:</span><br />
+                              <textarea form="order" rows="4" cols="40" id="notes" class="plain"
+                                   placeholder="Enter any special instructions here."></textarea>
+                              <br />
+                              <br />
+                              <input type="submit" id="order-button" value="Submit" class="plain" />
+                         </div>
+                    </form>
+               </div>
+          </div>
+
+<!-- Turned number of cheesecakes sold into a sort of testamonial thing in the sidebar -->
+
+          <div id="testamonials">
+               <div id="testamonial-arrow" class="mirrored"></div>
+               <div>
+                    <span class="padded">
+                         <h3 id="total-orders">Total Orders For </h3>
+
+                    <!-- Add in the dropdown menu. See accreditation in CSS comments -->
+
+                    <div class="dropdown">
+                         <h3 id="selector">Jan</h3></span>
+                              <div class="dropdowncontent">
+                                   <div id="months">
+                                        <div id="Jan" class="month current-month">Jan</div>
+                                        <div id="Feb" class="month">Feb</div>
+                                        <div id="Mar" class="month">Mar</div>
+                                        <div id="Apr" class="month">Apr</div>
+                                        <div id="May" class="month">May</div>
+                                        <div id="Jun" class="month">Jun</div>
+                                        <div id="Jul" class="month">Jul</div>
+                                        <div id="Aug" class="month">Aug</div>
+                                        <div id="Sep" class="month">Sep</div>
+                                        <div id="Oct" class="month">Oct</div>
+                                        <div id="Nov" class="month">Nov</div>
+                                        <div id="Dec" class="month">Dec</div>
+                                   </div>
+                              </div>
+                         </div>
+
+                    <!-- End Dropdown menu -->
+
+                    <ul id="list_orders">
+                         <li id="cherry-li" class="cherry">11 cherry</li>
+                         <li id="chocolate-li" class="chocolate">17 chocolate</li>
+                         <li id="plain-li" class="plain">31 plain</li>
+                    </ul>
+                    <br />
+               </div>
+               <div id="bonus"></div>
+          </div>
+
+<!-- Added a bar with my name and class to the bottom, only visible with the stylesheet -->
+
+          <div id="bottom-bar" style="display: none">
+               Philip Robinson,&nbsp; CS 341 Homework 2
+          </div>
+     </body>
+</html>
