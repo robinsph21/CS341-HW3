@@ -1,4 +1,5 @@
 # CS341-HW3
+## Author: Philip Robinson
 ## Getting started with Node.JS and a backend
 
 ### Goal

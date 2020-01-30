@@ -1,3 +1,5 @@
+// Author: Philip Robinson
+
 dropdown_title_handler = function( e ){
      // Grab the first element in the dropdown with class "current-month"
      // Note: It should be noted that this only works if nothing is manually

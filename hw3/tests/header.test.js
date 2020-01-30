@@ -1,3 +1,6 @@
+// Author: Philip Robinson
+// Credit: Dr. Tribelhorn, Dr. Nuxoll
+
 const fs = require('fs');
 
 test('test selectEvent', () => {

@@ -1,3 +1,5 @@
+// Author: Philip Robinson
+
 arrow_change_handler = function( e ) {
      $("#testamonial-arrow").toggleClass("mirrored");
 }

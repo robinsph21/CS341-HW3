@@ -1,3 +1,5 @@
+// Author: Philip Robinson
+
 form_submit_handler = function( e ) {
      // Stop the default behavior of refreshing the website
      e.preventDefault();
