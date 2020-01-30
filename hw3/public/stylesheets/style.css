@@ -5,19 +5,19 @@
 /****************************/
 
 .cursor {
-     cursor: url(https://i.imgur.com/PgZxn90.png), auto;
+     cursor: url(/images/plain_cursor.png), auto;
 }
 
 .cherry {
-     cursor: url(https://i.imgur.com/fB2rgzx.png), auto;
+     cursor: url(/images/cherry_cursor.png), auto;
 }
 
 .chocolate {
-     cursor: url(https://i.imgur.com/PpO8pOE.png), auto;
+     cursor: url(/images/chocolate_cursor.png), auto;
 }
 
 .plain {
-     cursor: url(https://i.imgur.com/PgZxn90.png), auto;
+     cursor: url(/images/plain_cursor.png), auto;
 }
 
 /***********************************/
@@ -25,7 +25,7 @@
 /***********************************/
 
 body {
-     background-image: url(https://upload.wikimedia.org/wikipedia/commons/e/ea/Baked_cheesecake_with_raspberries_and_blueberries.jpg);
+     background-image: url(/images/background_cheesecake.jpg);
      background-size: cover;
      z-index: -2;
      font-family: 'Montserrat', sans-serif;
@@ -34,7 +34,11 @@ body {
 #gradient-layer {
      z-index: -1;
      background: rgb(255,191,192);
-     background: linear-gradient(rgba(235,200,200,0.8744631641719187) 0%, rgba(255,190,210,0.8548553210346639) 66.6%, rgba(255,150,180,1) 100%);
+     background: linear-gradient(
+          rgba(235,200,200,0.875) 0%,
+          rgba(255,190,210,0.85) 66.6%,
+          rgba(255,150,180,1) 100%
+     );
      position: fixed;
      top: 0;
      right: 0;
@@ -78,7 +82,7 @@ https://stackoverflow.com/questions/6805482/css3-transition-animation-on-load
 }
 
 #header {
-     background-image: url(https://i.imgur.com/ZcFVWkR.png);
+     background-image: url(/images/parchment_background.png);
      background-repeat: repeat;
      border-style: dashed;
      border-top: 3px;
@@ -109,7 +113,7 @@ h1 {
 
 #form-content {
      display: flex;
-     background-image: url(https://i.imgur.com/ZcFVWkR.png);
+     background-image: url(/images/parchment_background.png);
      background-repeat: repeat;
      -moz-box-shadow:    inset 0 0 50px rgba(200, 120, 50, 0.175);
      -webkit-box-shadow: inset 0 0 50px rgba(200, 120, 50, 0.175);
@@ -175,15 +179,15 @@ li {
 }
 
 #cherry-li {
-     list-style-image:url(https://i.imgur.com/gJxfZL7.png);
+     list-style-image:url(/images/cherry_li.png);
 }
 
 #chocolate-li {
-     list-style-image:url(https://i.imgur.com/FXCBgmE.png);
+     list-style-image:url(/images/chocolate_li.png);
 }
 
 #plain-li {
-     list-style-image:url(https://i.imgur.com/d2ZnExs.png);
+     list-style-image:url(/images/plain_li.png);
 }
 
 .special-heading {
@@ -209,7 +213,7 @@ textarea {
      font-size: 14px;
      padding: 8px;
      width: 100%;
-     background-image: url(https://i.imgur.com/ZcFVWkR.png);
+     background-image: url(/images/parchment_background.png);
      background-repeat: repeat;
      border-width: 3px;
      border-style: dashed;
@@ -251,7 +255,7 @@ textarea {
 }
 
 #testamonials {
-     background-image: url(https://i.imgur.com/ZcFVWkR.png);
+     background-image: url(/images/parchment_background.png);
      position: fixed;
      display: flex;
      padding: 10px;
@@ -272,7 +276,7 @@ textarea {
 }
 
 #testamonial-arrow {
-     background-image: url(https://i.imgur.com/HtOMa5i.png);
+     background-image: url(/images/testamonial_arrow.png);
      background-size: 82px 200px;
      margin-top: auto;
      margin-bottom: auto;
@@ -288,7 +292,7 @@ h3 {
 }
 
 #bonus {
-     background-image: url(https://i.imgur.com/goXAVvU.png);
+     background-image: url(/images/baked_fresh.png);
      position: absolute;
      right: 15px;
      bottom: 35px;
@@ -335,7 +339,7 @@ h3 {
      text-align: center;
      color: rgba(110, 70, 10, 1);
      padding: 15px;
-     background-image: url(https://i.imgur.com/ZcFVWkR.png);
+     background-image: url(/images/parchment_background.png);
      background-repeat: repeat;
      -moz-box-shadow:    0 0 50px rgba(200, 120, 50, 0.75), inset 0 0 25px rgba(200, 180, 120, 0.5);
      -webkit-box-shadow: 0 0 50px rgba(200, 120, 50, 0.75), inset 0 0 25px rgba(200, 180, 120, 0.5);
@@ -379,7 +383,7 @@ h3 {
      margin-top: -20px;
      border-radius: 15px;
      padding: 12px 16px;
-     background-image: url(https://i.imgur.com/ZcFVWkR.png);
+     background-image: url(/images/parchment_background.png);
      -moz-box-shadow:    0 0 20px rgba(200, 120, 50, 0.5), inset 0 0 20px rgba(200, 120, 50, 0.25);
      -webkit-box-shadow: 0 0 20px rgba(200, 120, 50, 0.5), inset 0 0 20px rgba(200, 120, 50, 0.25);
      box-shadow:         0 0 20px rgba(200, 120, 50, 0.5), inset 0 0 20px rgba(200, 120, 50, 0.25);
