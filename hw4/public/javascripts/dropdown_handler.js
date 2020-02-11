@@ -12,7 +12,14 @@ dropdown_title_handler = function( e ){
      $("#selector").html($(this).html());
      // Remove that month from the menu by giving it the "current-month" class.
      $(this).addClass("current-month");
+     // Send the post
+     $.post( "/orders", function( data ) {
+         $("#cherry-quantity").html(JSON.stringify(data.data[0].quantity));
+         $("#chocolate-quantity").html(JSON.stringify(data.data[1].quantity));
+         $("#plain-quantity").html(JSON.stringify(data.data[2].quantity));
+     });
 }
+
 
 $(function(){
      // If a month in the dropdown is clicked
