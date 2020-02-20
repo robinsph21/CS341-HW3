@@ -9,11 +9,12 @@ dropdown_title_handler = function( e ){
      // Remove the "current-month" class from the element, making it visible
      $(month).removeClass("current-month");
      // Make the selector/widget's current text the month that was clicked.
-     $("#selector").html($(this).html());
+     var month_string = $(this).html();
+     $("#selector").html(month_string);
      // Remove that month from the menu by giving it the "current-month" class.
      $(this).addClass("current-month");
      // Send the post
-     $.post( "/orders", function( data ) {
+     $.post( "/orders?month=" + month_string.toUpperCase(), function( data ) {
          $("#cherry-quantity").html(JSON.stringify(data.data[0].quantity));
          $("#chocolate-quantity").html(JSON.stringify(data.data[1].quantity));
          $("#plain-quantity").html(JSON.stringify(data.data[2].quantity));
